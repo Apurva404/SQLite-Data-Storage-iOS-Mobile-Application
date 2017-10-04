@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061BF6B41F75A3F4001C1363 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 061BF6B31F75A3F4001C1363 /* libsqlite3.tbd */; };
 		065ED3D01F735C7800078986 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED3CF1F735C7800078986 /* main.m */; };
 		065ED3D31F735C7800078986 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED3D21F735C7800078986 /* AppDelegate.m */; };
 		065ED3D61F735C7800078986 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED3D51F735C7800078986 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061BF6B31F75A3F4001C1363 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		065ED3CB1F735C7800078986 /* SQLiteDataStorageAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteDataStorageAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		065ED3CF1F735C7800078986 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		065ED3D11F735C7800078986 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061BF6B41F75A3F4001C1363 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061BF6B21F75A3F4001C1363 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				061BF6B31F75A3F4001C1363 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		065ED3C21F735C7800078986 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +96,7 @@
 				065ED3E71F735C7800078986 /* SQLiteDataStorageAssignmentTests */,
 				065ED3F21F735C7800078986 /* SQLiteDataStorageAssignmentUITests */,
 				065ED3CC1F735C7800078986 /* Products */,
+				061BF6B21F75A3F4001C1363 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -425,7 +437,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQLiteDataStorageAssignment/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Apurva.SQLiteDataStorageAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -507,6 +520,7 @@
 				065ED3FA1F735C7800078986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		065ED3FB1F735C7800078986 /* Build configuration list for PBXNativeTarget "SQLiteDataStorageAssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +529,7 @@
 				065ED3FD1F735C7800078986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		065ED3FE1F735C7800078986 /* Build configuration list for PBXNativeTarget "SQLiteDataStorageAssignmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +538,7 @@
 				065ED4001F735C7800078986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
